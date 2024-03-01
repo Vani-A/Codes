@@ -1,0 +1,31 @@
+class Main {
+
+  public static boolean CheckPalindrom(String s) {
+    String rev="";
+    boolean ans=false;
+    for(int i=s.length()-1;i>=0;i--)
+      {
+      rev=rev+s.charAt(i);
+      }
+    if(s.equals(rev))
+    ans= true;
+
+    return ans;
+  
+}
+  
+
+  public static void main(String[] args) {
+    //System.out.println("Hello world!");
+
+    String s = "Madam";
+  
+    //System.out.println(s);
+    s=s.toLowerCase();
+    boolean ans= CheckPalindrom(s);
+    
+    System.out.println(ans);
+   
+  }
+
+}
